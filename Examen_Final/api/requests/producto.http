@@ -1,0 +1,30 @@
+@url = http://localhost:4000/producto
+
+GET {{url}}
+
+###
+GET {{url}}/1
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "Nombre": "Test",
+    "Precio": "20",
+    "Codigo": "123f",
+    "Existencia": "5"
+}
+
+###
+PUT {{url}}/8
+Content-Type: application/json
+
+{
+    "Nombre": "Ematest",
+    "Precio": "20",
+    "Codigo": "123f",
+    "Existencia": "5"
+}
+
+###
+DELETE {{url}}/5
